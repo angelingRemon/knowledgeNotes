@@ -7,9 +7,9 @@ set -e
 git config --global core.autocrlf true
 
 # 文档源码提交到github
-git add -A
-git commit -m 'add notes'
-git push
+# git add -A
+# git commit -m 'add notes'
+# git push
 
 # 生成静态文件
 npm run build
