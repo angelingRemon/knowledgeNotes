@@ -1,6 +1,13 @@
 language: node_js
 node_js:
-  - 18
+  - 18.18.0
 branchs:
   only:
     - main
+cache:
+  directories:
+    - node_modules
+before_install:
+  - export TZ='Asia/Shanghai' # 设置时区 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
+script:
+  - ./deploy.sh
