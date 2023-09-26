@@ -3,6 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# Windows系统下在提交代码时自动将LF转换为CRLF
+git config --global core.autocrlf true
+
 # 文档源码提交到github
 git add -A
 git commit -m 'add notes'
@@ -21,8 +24,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# Windows系统下在提交代码时自动将LF转换为CRLF
-git config --global core.autocrlf true
+
 
 git config --local user.name "angelingRemon"
 git config --local user.email "790223383@qq.com"
