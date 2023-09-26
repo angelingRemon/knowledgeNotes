@@ -47,6 +47,7 @@ module.exports = {
       {
         text: '工具集', link: '/pages/a20ce8/', items: [
           {text: 'Git'},
+          {text: 'webpack'},
           { text: '主题配置', link: '/pages/a20ce8/' },
           { text: '首页配置', link: '/pages/f14bdb/' },
           { text: 'front matter配置', link: '/pages/3216b0/' },
