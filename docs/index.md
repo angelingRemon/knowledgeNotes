@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /img/logo.gif
-heroText: 全菜工程师
-tagline: 🚀沉淀与共享优秀知识，构建你的个人笔记和知识管理体系🚀
+heroText: 全菜工程师的个人笔记
+tagline: 🚀沉淀与共享优秀知识，构建我的个人笔记和知识管理体系🚀
 actionText: 开始学习 →
 actionLink: /pages/a2f161/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
