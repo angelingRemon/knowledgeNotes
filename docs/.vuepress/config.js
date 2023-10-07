@@ -21,9 +21,19 @@ module.exports = {
     themeConfig: {
         nav: [
             {text: '首页', link: '/'},
-            {text: '前端体系', link: '/pages/d17cee/'},
             {
-                text: '工具集', link: '/pages/a20ce8/', items: [
+                text: '前端体系',
+                items: [
+                    {text: 'HTML'},
+                    {text: 'CSS'},
+                    {text: 'JavaScript'},
+                    {text: 'Vue', link: '/pages/d17cee/'},
+                    {text: 'React'}
+                ]
+            },
+            {
+                text: '工具集', link: '/pages/a20ce8/',
+                items: [
                     {text: 'Git'},
                     {text: 'webpack'},
                     {text: '主题配置', link: '/pages/a20ce8/'},
