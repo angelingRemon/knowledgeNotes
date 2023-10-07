@@ -9,8 +9,8 @@ git config --global core.autocrlf true
 # 文档源码提交到github
 git add -A
 git commit -m 'add notes'
-git pull --rebase origin master
-git push -u origin master
+git pull --rebase origin main
+git push -u origin main
 
 # 生成静态文件
 npm run build
