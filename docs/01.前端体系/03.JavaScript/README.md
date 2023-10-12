@@ -9,7 +9,7 @@ permalink: /pages/ddd918/
 - [包装对象](/pages/ddd918 '包装对象')
 - [Boolean 对象](/pages/ddd918 'Boolean 对象')
 - [Number 对象](/pages/ddd918 'Number 对象')
-- [String 对象](/pages/ddd918 'String 对象')
+- [String 对象](/pages/cd0c24/ 'String 对象')
 - [Math 对象](/pages/ddd918 'Math 对象')
 - [Date 对象](/pages/ddd918 'Date 对象')
 - [RegExp 对象](/pages/ddd918 'RegExp 对象')
