@@ -32,7 +32,8 @@ module.exports = {
                 ]
             },
             {
-                text: '代码片段', link: '/pages/21be86/',
+                text: '代码片段',
+                link: '/pages/ce33cb/',
                 items: [
                     {text: 'HTML'},
                     {text: 'CSS'},
