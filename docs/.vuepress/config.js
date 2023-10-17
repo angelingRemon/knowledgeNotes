@@ -23,6 +23,7 @@ module.exports = {
             {text: '首页', link: '/'},
             {
                 text: '前端体系',
+                link: '/pages/ddd918/',
                 items: [
                     {text: 'HTML', link: '/pages/21f07d/'},
                     {text: 'CSS', link: '/pages/4e2e91/'},
@@ -33,27 +34,13 @@ module.exports = {
             },
             {
                 text: '代码片段',
-                link: '/pages/ce33cb/',
-                items: [
-                    {text: 'HTML'},
-                    {text: 'CSS'},
-                    {text: 'JavaScript'},
-                    {text: 'Vue'},
-                    {text: 'React'}
-                ]
+                link: '/pages/1651d9/',
             },
             {
-                text: '工具集', link: '/pages/a20ce8/',
+                text: '工具集', link: '/pages/953331/',
                 items: [
                     {text: 'Git'},
                     {text: 'webpack'},
-                    {text: '主题配置', link: '/pages/a20ce8/'},
-                    {text: '首页配置', link: '/pages/f14bdb/'},
-                    {text: 'front matter配置', link: '/pages/3216b0/'},
-                    {text: '目录页配置', link: '/pages/54651a/'},
-                    {text: '添加摘要', link: '/pages/1cc523/'},
-                    {text: '修改主题颜色和样式', link: '/pages/f51918/'},
-                    {text: '评论栏', link: '/pages/ce175c/'},
                 ]
             },
             {text: '后端学习', link: '/pages/db78e2/'},
