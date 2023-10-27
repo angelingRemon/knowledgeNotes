@@ -12,5 +12,5 @@ permalink: /pages/ddd918/
 - [String 对象](/pages/cd0c24/ 'String 对象')
 - [Math 对象](/pages/b1de3c/ 'Math 对象')
 - [Date 对象](/pages/118867/ 'Date 对象')
-- [RegExp 对象](/pages/ddd918 'RegExp 对象')
+- [RegExp 对象](/pages/1e0acc/ 'RegExp 对象')
 - [JSON 对象](/pages/ddd918 'JSON 对象')
