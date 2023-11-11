@@ -25,11 +25,28 @@ postList: none
 - name: cenggel的博客
   desc: 👍 此人非常牛逼 👍
   link: http://cenggel.com/
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
+  bgColor: '#67C23A'
+  textColor: '#ffffff'
 ```
 :::
-
+::: cardList 3
+```yaml
+- name: 编程指南 
+  desc: 👍 鱼皮原创文章汇总 👍
+  link: https://yuyuanweb.feishu.cn/wiki/KSrdwPbuPiVjuvkPvd6cWLKgnCg
+  bgColor: '#E6A23C'
+  textColor: '#ffffff'
+```
+:::
+::: cardList 3
+```yaml
+- name: 编程宝典 
+  desc: 👍 贴心的编程学习路线 👍
+  link: https://www.codefather.cn/
+  bgColor: '#79BBFF'
+  textColor: '#ffffff'
+```
+:::
 <br/>
 
 ## 🎉 有点儿意思 
