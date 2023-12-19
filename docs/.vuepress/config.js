@@ -28,6 +28,7 @@ module.exports = {
                     {text: 'HTML', link: '/pages/21f07d/'},
                     {text: 'CSS', link: '/pages/4e2e91/'},
                     {text: 'JavaScript', link: '/pages/ddd918/'},
+                    {text: 'ECMASCRIPT', link: '/pages/f35604/'},
                     {text: 'Vue', link: '/pages/d17cee/'},
                     {text: 'React'}
                 ]
