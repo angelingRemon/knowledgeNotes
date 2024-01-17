@@ -24,14 +24,15 @@ module.exports = {
             {
                 text: '前端体系',
                 link: '/pages/ddd918/',
-                // items: [
-                //     {text: 'HTML', link: '/pages/21f07d/'},
-                //     {text: 'CSS', link: '/pages/4e2e91/'},
-                //     {text: 'JavaScript', link: '/pages/ddd918/'},
-                //     {text: 'ECMASCRIPT', link: '/pages/f35604/'},
-                //     {text: 'Vue', link: '/pages/d17cee/'},
-                //     {text: 'React'}
-                // ]
+                items: [
+                    {text: 'HTML', link: '/pages/21f07d/'},
+                    {text: 'CSS', link: '/pages/4e2e91/'},
+                    {text: 'JavaScript', link: '/pages/ddd918/'},
+                    {text: 'ECMASCRIPT', link: '/pages/f35604/'},
+                    {text: 'Vue', link: '/pages/d17cee/'},
+                    {text: 'React'},
+                    {text: '数据可视化'}
+                ]
             },
             {
                 text: '代码片段',
