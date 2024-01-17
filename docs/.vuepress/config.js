@@ -24,14 +24,14 @@ module.exports = {
             {
                 text: '前端体系',
                 link: '/pages/ddd918/',
-                items: [
-                    {text: 'HTML', link: '/pages/21f07d/'},
-                    {text: 'CSS', link: '/pages/4e2e91/'},
-                    {text: 'JavaScript', link: '/pages/ddd918/'},
-                    {text: 'ECMASCRIPT', link: '/pages/f35604/'},
-                    {text: 'Vue', link: '/pages/d17cee/'},
-                    {text: 'React'}
-                ]
+                // items: [
+                //     {text: 'HTML', link: '/pages/21f07d/'},
+                //     {text: 'CSS', link: '/pages/4e2e91/'},
+                //     {text: 'JavaScript', link: '/pages/ddd918/'},
+                //     {text: 'ECMASCRIPT', link: '/pages/f35604/'},
+                //     {text: 'Vue', link: '/pages/d17cee/'},
+                //     {text: 'React'}
+                // ]
             },
             {
                 text: '代码片段',
@@ -39,14 +39,18 @@ module.exports = {
             },
             {
                 text: '工具集', link: '/pages/953331/',
-                items: [
-                    {text: 'Git'},
-                    {text: 'webpack'},
-                ]
+                // items: [
+                //     {text: 'Git'},
+                //     {text: 'webpack'},
+                // ]
             },
             {text: '后端学习', link: '/pages/db78e2/'},
             {text: '写作辅助', link: '/pages/bc7bfe/'},
-            {text: '优秀资源', link: '/pages/306d53/'}
+            {text: '优秀资源', link: '/pages/306d53/'},
+            {text: '数学学习', link: '/pages/b116e5/'},
+            {text: '英语学习', link: '/pages/6aaa98/'},
+            {text: '个人成长', link: '/pages/f56b08/'}
+
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
         logo: '/img/logo.gif', // 导航栏logo
