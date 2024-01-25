@@ -1,7 +1,6 @@
 const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 const htmlModules = require('./config/htmlModules.js');
 
-
 module.exports = {
 
     theme: 'vdoing', // 使用依赖包主题
@@ -23,6 +22,27 @@ module.exports = {
     themeConfig: {
         bodyBgImg: '/img/bodyBg.jpg',  // 你的图片路径(必须位于 public 下)，可以是 URL
         bodyBgImgOpacity: 1, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
+        // 私密文章配置
+        privatePage: {
+            openPrivate: true, // 开启私密文章验证，默认开启（true），如果不开启（false），则下面配置都失效
+            username: "RenYongQiang", // 管理员用户名
+            password: "123456", // 管理员密码
+            expire: "1h", // 登录过期时间：1d 代表 1 天，1h 代表 1 小时，仅支持这两个单位，不加单位代表秒。过期后访问私密文章重新输入用户名和密码。默认一天
+            loginPath: "/vdoing/login/", // 引用登录组件的 md 文章的 permalink（必须），无默认值
+            loginKey: "vdoing_manager", // 存储用户名信息的 key，默认是 vdoing_manager。系统通过该 key 验证是否登录、是否过期
+            loginSession: false, // 开启是否在网页关闭或刷新后，清除登录状态，这样再次访问网页，需要重新登录，默认为 false（不开启）
+            firstLogin: 0, // 第一次进入网站需要验证。用于封锁整个网站，默认为 0（不开启），1 和 2 都代表开启，区别：1 代表虽然进入网站成功，但是网站内的私密文章仍需要单独验证，2 代表进入网站成功，网站内的私密文章不需要单独验证，也就是网站内的私密文章和普通文章一样可以访问
+            firstLoginKey: "vdoing_first_login", // 存储用户名信息的 key，firstLogin 开启后该配置生效，默认为 vdoing_first_login，系统通过该 key 验证是否登录、是否过期
+            // 私密文章多组用户名密码
+            loginInfo: {
+                "vdoing_first_login" :[  // 对应 firstLoginKey 的值
+                    { username: "Remon", password: "123456" },
+                ],
+                // "/pages/ddd917/" :[
+                //     { username: "change", password: "123456" },
+                // ]
+            }
+        },
         // 首页配置
         indexImg: {
             navColor: 2,    // 导航栏左侧名字、中间搜索框、右侧字体的颜色，1 是黑色，2 是白色。默认是 1
@@ -41,8 +61,8 @@ module.exports = {
                 "---埃隆·马斯克"
             ],  // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFade 为 true 生效
             descFontSize: '1.4rem',   //  desc 的字体大小，默认 1.4rem。提示：原主题是1.1rem
-            descFadeInTime: 200,  // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
-            descFadeOutTime: 100,  // 描述的淡出效果持续时间，descFade 为 true 生效，默认 100 毫秒
+            descFadeInTime: 120,  // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
+            descFadeOutTime: 120,  // 描述的淡出效果持续时间，descFade 为 true 生效，默认 100 毫秒
             descNextTime: 800,  // 当存在多个 desc 时，一个 desc 展示完后或准备开始时，多少秒后出现下一个 desc，默认 800 毫秒
             bubble: false,    // 是否开启图片的气泡效果，默认为 false
             bubblePosition: 0,  // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
@@ -52,7 +72,7 @@ module.exports = {
             {text: '首页', link: '/'},
             {
                 text: '前端体系',
-                link: '/pages/ddd918/',
+                link: '/pages/ddd917/',
                 items: [
                     {text: 'HTML', link: '/pages/21f07d/'},
                     {text: 'CSS', link: '/pages/4e2e91/'},
@@ -143,24 +163,7 @@ module.exports = {
             copyrightInfo: '全菜工程师 | MIT License', // 博客版权信息，支持a标签
         },
         htmlModules,
-        // 私密文章配置
-        privatePage: {
-            openPrivate: true, // 开启私密文章验证，默认开启（true），如果不开启（false），则下面配置都失效
-            username: "RenYongQiang", // 管理员用户名
-            password: "123456", // 管理员密码
-            expire: "1d", // 登录过期时间：1d 代表 1 天，1h 代表 1 小时，仅支持这两个单位，不加单位代表秒。过期后访问私密文章重新输入用户名和密码。默认一天
-            loginPath: "/vdoing/login/", // 引用登录组件的 md 文章的 permalink（必须），无默认值
-            loginKey: "vdoing_manager", // 存储用户名信息的 key，默认是 vdoing_manager。系统通过该 key 验证是否登录、是否过期
-            loginSession: false, // 开启是否在网页关闭或刷新后，清除登录状态，这样再次访问网页，需要重新登录，默认为 false（不开启）
-            firstLogin: 0, // 第一次进入网站需要验证。用于封锁整个网站，默认为 0（不开启），1 和 2 都代表开启，区别：1 代表虽然进入网站成功，但是网站内的私密文章仍需要单独验证，2 代表进入网站成功，网站内的私密文章不需要单独验证，也就是网站内的私密文章和普通文章一样可以访问
-            firstLoginKey: "vdoing_first_login", // 存储用户名信息的 key，firstLogin 开启后该配置生效，默认为 vdoing_first_login，系统通过该 key 验证是否登录、是否过期
-            // 私密文章多组用户名密码
-            loginInfo: {
-              "vdoing_first_login" :[  // 对应 firstLoginKey 的值
-                { username: "Remon", password: "123456" },
-              ]
-            }
-        },
+
     },
     // 插件
     plugins: [
