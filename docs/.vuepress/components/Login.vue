@@ -1,5 +1,7 @@
 <template>
-  <div class="login-form">
+  <div class="loginContainer">
+    <img class="logoImg" src="/img/other.png" alt="">
+    <div class="login-form">
     <div class="form-header">用户名</div>
     <div>
       <input
@@ -22,6 +24,7 @@
     <div class="btn-row">
       <button class="btn" @click="login">登录</button>
     </div>
+  </div>
   </div>
 </template>
 
@@ -309,8 +312,14 @@ function nextAllTipElement(elem) {
 </script>
 
 <style lang="stylus">
+.logoImg {
+  width: 12rem;
+  height: 12rem;
+  display: block;
+  margin: 0 auto;
+}
 .login-form {
-  padding: 1rem;
+  padding: 1rem 1rem 5rem;
   box-sizing: border-box;
 
   .btn-row {
@@ -319,7 +328,8 @@ function nextAllTipElement(elem) {
   }
 
   .btn {
-    padding: 0.6rem 2rem;
+    width: 100%;
+    padding: 0.8rem 2rem;
     outline: none;
     background-color: #60C084;
     color: white;
@@ -333,7 +343,7 @@ function nextAllTipElement(elem) {
   }
 
   .form-control {
-    padding: 0.6rem;
+    padding: 0.8rem;
     border: 2px solid #ddd;
     width: 100%;
     margin-bottom: 0.5rem;

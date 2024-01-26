@@ -1,7 +1,7 @@
 ---
 title: 标准库 
 date: 2023-10-08 11:43:49
-permalink: /pages/ddd917/
+permalink: /frontEndSystem/javascript/ddd917/
 ---
 - [Object对象](/pages/ddd918 'Object对象')
 - [属性描述对象](/pages/ddd918 '属性描述对象')

@@ -26,7 +26,7 @@ module.exports = {
         privatePage: {
             openPrivate: true, // 开启私密文章验证，默认开启（true），如果不开启（false），则下面配置都失效
             username: "RenYongQiang", // 管理员用户名
-            password: "123456", // 管理员密码
+            password: "RenYongQiang", // 管理员密码
             expire: "1h", // 登录过期时间：1d 代表 1 天，1h 代表 1 小时，仅支持这两个单位，不加单位代表秒。过期后访问私密文章重新输入用户名和密码。默认一天
             loginPath: "/vdoing/login/", // 引用登录组件的 md 文章的 permalink（必须），无默认值
             loginKey: "vdoing_manager", // 存储用户名信息的 key，默认是 vdoing_manager。系统通过该 key 验证是否登录、是否过期
@@ -72,15 +72,15 @@ module.exports = {
             {text: '首页', link: '/'},
             {
                 text: '前端体系',
-                link: '/pages/ddd917/',
+                link: '/frontEndSystem/',
                 items: [
-                    {text: 'HTML', link: '/pages/21f07d/'},
-                    {text: 'CSS', link: '/pages/4e2e91/'},
-                    {text: 'JavaScript', link: '/pages/ddd918/'},
-                    {text: 'ECMASCRIPT', link: '/pages/f35604/'},
-                    {text: 'Vue', link: '/pages/d17cee/'},
-                    {text: 'React'},
-                    {text: '数据可视化'}
+                    {text: 'HTML', link: '/frontEndSystem/html/'},
+                    {text: 'CSS', link: '/frontEndSystem/css/'},
+                    {text: 'JavaScript', link: '/frontEndSystem/javascript/'},
+                    {text: 'ECMASCRIPT', link: '/frontEndSystem/ecmascript/'},
+                    {text: 'Vue', link: '/frontEndSystem/vue/'},
+                    {text: 'React', link: '/frontEndSystem/react/'},
+                    {text: '数据可视化', link: '/frontEndSystem/Visualization/'}
                 ]
             },
             {
@@ -97,9 +97,9 @@ module.exports = {
             {text: '后端学习', link: '/pages/db78e2/'},
             {text: '写作辅助', link: '/pages/bc7bfe/'},
             {text: '优秀资源', link: '/pages/306d53/'},
-            {text: '数学学习', link: '/pages/b116e5/'},
-            {text: '英语学习', link: '/pages/6aaa98/'},
-            {text: '个人成长', link: '/pages/f56b08/'}
+            {text: '数学学习', link: '/mathematics/'},
+            {text: '英语学习', link: '/english/'},
+            {text: '个人成长', link: '/personal/'}
 
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
