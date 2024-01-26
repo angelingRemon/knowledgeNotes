@@ -72,15 +72,15 @@ module.exports = {
             {text: '首页', link: '/'},
             {
                 text: '前端体系',
-                link: '/frontEndSystem/',
+                // link: '/frontEndSystem/',
                 items: [
-                    // {text: 'HTML', link: '/frontEndSystem/html/'},
-                    // {text: 'CSS', link: '/frontEndSystem/css/'},
-                    // {text: 'JavaScript', link: '/frontEndSystem/javascript/'},
-                    // {text: 'ECMASCRIPT', link: '/frontEndSystem/ecmascript/'},
-                    // {text: 'Vue', link: '/frontEndSystem/vue/'},
-                    // {text: 'React', link: '/frontEndSystem/react/'},
-                    // {text: '数据可视化', link: '/frontEndSystem/Visualization/'}
+                    {text: 'HTML', link: '/frontEndSystem/html/'},
+                    {text: 'CSS', link: '/frontEndSystem/css/'},
+                    {text: 'JavaScript', link: '/frontEndSystem/javascript/'},
+                    {text: 'ECMASCRIPT', link: '/frontEndSystem/ecmascript/'},
+                    {text: 'Vue', link: '/frontEndSystem/vue/'},
+                    {text: 'React', link: '/frontEndSystem/react/'},
+                    {text: '数据可视化', link: '/frontEndSystem/Visualization/'}
                 ]
             },
             {
