@@ -73,7 +73,7 @@ module.exports = {
             {
                 text: '前端体系',
 
-                // link: '/frontEndSystem/',
+                link: '/frontEndSystem/',
                 items: [
                     {text: 'HTML', link: '/frontEndSystem/HTML/'},
                     {text: 'CSS', link: '/frontEndSystem/css/'},
