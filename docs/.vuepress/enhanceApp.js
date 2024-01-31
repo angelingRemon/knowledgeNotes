@@ -1,6 +1,7 @@
 /**
  * to主题使用者：你可以去掉本文件的所有代码
  */
+import Notifications from 'vue-notification/dist/ssr.js'
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项
@@ -8,7 +9,7 @@ export default ({
   siteData, // 站点元数据
   isServer // 当前应用配置是处于 服务端渲染 还是 客户端
 }) => {
-
+  Vue.use(Notifications)
   // 用于监控在路由变化时检查广告拦截器 (to主题使用者：你可以去掉本文件的所有代码)
   if (!isServer) {
 
