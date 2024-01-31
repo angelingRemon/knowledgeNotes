@@ -75,7 +75,7 @@ module.exports = {
 
                 link: '/frontEndSystem/',
                 items: [
-                    {text: 'HTML', link: '/frontEndSystem/HTML/'},
+                    {text: 'HTML', link: '/frontEndSystem/html/'},
                     {text: 'CSS', link: '/frontEndSystem/css/'},
                     {text: 'JavaScript', link: '/frontEndSystem/javascript/'},
                     {text: 'ECMASCRIPT', link: '/frontEndSystem/ecmascript/'},
