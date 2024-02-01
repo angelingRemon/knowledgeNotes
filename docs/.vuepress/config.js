@@ -86,19 +86,20 @@ module.exports = {
             },
             {
                 text: '代码片段',
-                link: '/pages/1651d9/',
+                link: '/codeSnippet/',
             },
             {
-                text: '工具集', link: '/pages/953331/',
-                // items: [
-                //     {text: 'Git'},
-                //     {text: 'webpack'},
-                // ]
+                text: '工具集', link: '/tools/',
+                items: [
+                    {text: 'Git'},
+                    {text: 'webpack'},
+                ]
             },
-            {text: '后端学习', link: '/pages/db78e2/'},
-            {text: '写作辅助', link: '/pages/bc7bfe/'},
-            {text: '优秀资源', link: '/pages/306d53/'},
-            {text: '数学学习', link: '/mathematics/'},
+            {text: '开发文档', link: '/document/'},
+            {text: '后端学习', link: '/nodejs/'},
+            {text: '写作辅助', link: '/writing/'},
+            {text: '优秀资源', link: '/resources/'},
+            {text: '数学学习', link: '/math/'},
             {text: '英语学习', link: '/english/'},
             {text: '个人成长', link: '/personal/'}
 
