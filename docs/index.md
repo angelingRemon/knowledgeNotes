@@ -12,7 +12,6 @@ postList: detailed
 <ClientOnly>
   <IndexBigImg />
   <Fantasy index="true" />
-  <WebInfo/>
 </ClientOnly>
 
 
