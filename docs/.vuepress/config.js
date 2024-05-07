@@ -90,13 +90,7 @@ module.exports = {
                 text: '代码片段',
                 link: '/codeSnippet/',
             },
-            {
-                text: '工具集', link: '/tools/',
-                items: [
-                    {text: 'Git'},
-                    {text: 'webpack'},
-                ]
-            },
+            {text: '工具集', link: '/tools/'},
             {text: '开发文档', link: '/document/'},
             {text: '后端学习', link: '/nodejs/'},
             {text: '写作辅助', link: '/writing/'},
