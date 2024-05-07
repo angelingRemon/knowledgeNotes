@@ -86,10 +86,7 @@ module.exports = {
                     {text: '数据可视化', link: '/frontEndSystem/Visualization/'}
                 ]
             },
-            {
-                text: '代码片段',
-                link: '/codeSnippet/',
-            },
+            {text: '代码片段', link: '/codeSnippet/'},
             {text: '工具集', link: '/tools/'},
             {text: '开发文档', link: '/document/'},
             {text: '后端学习', link: '/nodejs/'},
