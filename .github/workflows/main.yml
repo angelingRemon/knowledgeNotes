@@ -28,8 +28,8 @@ jobs:
 
       - name: 步骤：第三步 -> 使用脚本部署
         uses: JamesIves/github-pages-deploy-action@v4
-        env:
-          ACCESS_TOKEN_DEPLOY: ${{secrets.ACCESS_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./docs/.vuepress/dist
+        with:
+          branch: gh-pages
+          folder: docs/.vuepress/dist
           CNAME: notes.renos.ren
+
