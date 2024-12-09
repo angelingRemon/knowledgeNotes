@@ -7,4 +7,4 @@ set -e
 git add -A
 git commit -m '更新笔记'
 git pull --rebase origin main
-git push -u origin main
+git push -u origin maih
