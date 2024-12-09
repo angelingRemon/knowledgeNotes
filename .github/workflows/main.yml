@@ -18,12 +18,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: 步骤：第二步 -> 缓存依赖
+      - name: 步骤：第二步 -> 恢复缓存
         uses: actions/cache@v3
         with:
-          path: |
-            ~/.npm    # 缓存 npm 存储库
-            node_modules # 或直接缓存 node_modules
+          path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
@@ -33,8 +31,12 @@ jobs:
           npm run build
         env:
           CI: true
-
-      - name: 步骤：第四步 -> 使用脚本部署
+      - name: 步骤：第四步 -> 保存缓存
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: 步骤：第五步 -> 使用脚本部署
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
