@@ -32,4 +32,4 @@ jobs:
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./docs/.vuepress/dist
           CNAME: notes.renos.ren
-        uses: angelingRemon/knowledgeNotesPage
+        uses: angelingRemon/knowledgeNotesPage@gh-pages
