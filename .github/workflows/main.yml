@@ -31,5 +31,5 @@ jobs:
         env:
           ACCESS_TOKEN_DEPLOY: ${{secrets.ACCESS_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: docs/.vuepress/dist
+          PUBLISH_DIR: ./docs/.vuepress/dist
           CNAME: notes.renos.ren
