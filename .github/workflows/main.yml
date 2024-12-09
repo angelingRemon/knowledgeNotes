@@ -31,15 +31,16 @@ jobs:
           npm run build
         env:
           CI: true
-      - name: 步骤：第四步 -> 保存缓存
+      - name: 步骤：第四步 -> 创建 CNAME 文件
+        run: echo "notes.renos.ren" > dist/CNAME
+      - name: 步骤：第五步 -> 保存缓存
         uses: actions/cache@v3
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      - name: 步骤：第五步 -> 使用脚本部署
+      - name: 步骤：第六步 -> 使用脚本部署
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: docs/.vuepress/dist
-          CNAME: notes.renos.ren
 
