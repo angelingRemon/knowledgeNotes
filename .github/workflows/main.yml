@@ -1,0 +1,35 @@
+name: knowledgeNotes
+on:
+  #监听push操作
+  push:
+    branches:
+      - main # 这里只配置了main分支，所以只有推送main分支才会触发以下任务
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: 步骤：第一步 -> Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 步骤：第二步 -> 安装依赖
+        run: |
+          npm install
+          npm run build
+        env:
+          CI: true
+
+      - name: 步骤：第三步 -> 使用脚本部署
+        env:
+          ACCESS_TOKEN_DEPLOY: ${{secrets.ACCESS_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./docs/.vuepress/dist
+          CNAME: notes.renos.ren
+          uses: angelingRemon/vuepress-actions@v1.0.0
