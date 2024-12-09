@@ -5,6 +5,6 @@ set -e
 
 # 文档源码提交到github
 git add -A
-git commit -m 'add notes'
+git commit -m '更新笔记'
 git pull --rebase origin main
 git push -u origin main
