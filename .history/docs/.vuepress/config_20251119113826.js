@@ -83,8 +83,7 @@ module.exports = {
                     {text: 'ECMASCRIPT', link: '/frontEndSystem/ecmascript/'},
                     {text: 'Vue', link: '/frontEndSystem/vue/'},
                     {text: 'React', link: '/frontEndSystem/react/'},
-                    {text: '数据可视化', link: '/frontEndSystem/Visualization/'},
-                    {text: '前端架构师', link: '/frontEndSystem/architecture/'},
+                    {text: '数据可视化', link: '/frontEndSystem/Visualization/'}
                 ]
             },
             {text: '代码片段', link: '/codeSnippet/'},
